@@ -4,4 +4,23 @@
 import os
 import glob
 import shutil
+import time
+
+# if dir does not exist, make it
+time.sleep(5)
+
+# in dir, create file with text
+time.sleep(5)
+
+# in dir, create sub-dir
+time.sleep(5)
+
+# in sub-dir, create file
+time.sleep(5)
+
+# in sub-dir, delete file
+time.sleep(5)
+
+# if dir exists, delete it and its contents
+time.sleep(5)
 
