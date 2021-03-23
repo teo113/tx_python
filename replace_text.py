@@ -15,3 +15,4 @@ in_file.close()
 out_file.close()
 
 # repeat for other files
+# potential to rewrite find/replace list as a loop
