@@ -20,8 +20,8 @@ for x in range(0, len(my_list)):
         print(f"rv point:{my_list[x]}")
     except:
         raise Exception(f"Warning at rv:{my_list[x]}")
-    else:
-        print(f"rv checked successfully, continue with caution...")
+    #else:
+    #    print(f"rv checked successfully, continue with caution...")
     continue
 
 print(str(len(my_list)), f"rv locations checked")
