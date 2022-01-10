@@ -8,7 +8,8 @@ from datetime import datetime
 from zipfile import ZipFile
 
 # directories
-dir = r'C:\Users\theo\Documents\tasks_c\dir_editing\main'
+#dir = r'C:\Users\theo\Documents\tasks_c\dir_editing\main'
+dir = r'C:\Users\Theo.Faull\OneDrive - Agilisys\Documents\tasks\python_testing\dir_editing\testing'
 subdir = dir + r'\subdir'
 
 # if dir does not exist, make it
@@ -43,6 +44,11 @@ with ZipFile(zipped, 'w') as zipf:
     zipf.write(txt_copy, arcname='test_copy.txt')
 print(zipped + ' created')
 time.sleep(5)
+
+# unzip zip file in sub-dir to dir
+with ZipFile(zipped, 'r') as zip_ref:
+    zip_ref.extractall(dir + '/extract')
+print("zip file unzipped to dir")
 
 # move zip file from subdir to dir
 shutil.move(zipped, dir + r'\test_' + date + '.zip')
